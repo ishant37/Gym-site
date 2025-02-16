@@ -1,0 +1,39 @@
+/* FeedbackForm.css */
+
+/* Keyframe animation for running border color */
+@keyframes runningBorder {
+    0% {
+      border-color: red;
+      box-shadow: 0 0 10px red;
+    }
+    25% {
+      border-color: orange;
+      box-shadow: 0 0 10px orange;
+    }
+    50% {
+      border-color: yellow;
+      box-shadow: 0 0 10px yellow;
+    }
+    75% {
+      border-color: green;
+      box-shadow: 0 0 10px green;
+    }
+    100% {
+      border-color: blue;
+      box-shadow: 0 0 10px blue;
+    }
+  }
+  
+  /* Apply animation to input and textarea when focused */
+  input:focus, textarea:focus {
+    animation: runningBorder 5s linear infinite;
+    border-width: 4px; /* Make the border thicker */
+    border-radius: 8px; /* Add some border-radius for a smoother look */
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #fbbf24; /* Hover color */
+    transform: scale(1.05);
+  }
+  
